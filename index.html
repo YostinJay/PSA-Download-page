@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+    /*Media Queries*/
+    @media only screen and (max-width: 1024px) {
+        .mobile {
+            padding: 10px;
+        }
+
+        .img_row,
+        .title {
+            text-align: center;
+        }
+
+        button {
+            background-color: white;
+            border: solid 1px black;
+            padding: 10px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .desc {
+            padding-top: 20px;
+        }
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    /*-------------------------*/
+    /*CSS*/
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <div class="desktop">
+        <h1>Open on Safari browser on your mobile phone.</h1>
+    </div>
+
+    <div class="mobile">
+        <div class="img_row">
+            <img src="images/psalogo.png" alt="psalogo" height="269pt" width="269pt">
+        </div>
+
+        <div class="title">
+            <h1>PSA</h1>
+            <button><a href="#"><strong>Download App</strong></a></button>
+        </div>
+
+        <div class="desc">
+            <h2>Installing and Trusting an Enterprise App</h2>
+            <p>When you ﬁrst open an enterprise app you've manually installed, you see
+                notiﬁcation that the developer of the app isn't trusted on your device. You can dismiss this message but
+                you
+                can't open the app.
+            </p>
+            <p>After dismissing this message you can establish trust for this app developer.</p>
+            <p>Tap "Settings" > General > Proﬁles or Proﬁles & Device Management.</p>
+            <p>You then see a a proﬁle for the developer under the "Enterprise App" heading</p>
+
+            <p>Tap the proﬁle to establish trust for this developer.</p>
+
+            <p>You're then prompted to conﬁrm your choice. Once you trust this proﬁle, you can manually install other
+                apps
+                from
+                the same developer and open them immediately. This developer remains trusted until you use the Delete
+                App
+                button
+                to remove all apps from the developer.</p>
+        </div>
+    </div>
+</body>
+
+</html>
